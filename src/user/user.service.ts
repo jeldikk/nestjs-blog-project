@@ -6,44 +6,6 @@ import { Repository } from 'typeorm';
 import { User } from './user.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 
-const USERS_DATA: (CreateUserDto & { id: number })[] = [
-  {
-    id: 1,
-    firstName: 'Kamal',
-    lastName: 'Jeldi',
-    email: 'kamal@example.com',
-    password: 'Password123',
-  },
-  {
-    id: 2,
-    firstName: 'John',
-    lastName: 'Doe',
-    email: 'john@example.com',
-    password: 'Password123',
-  },
-  {
-    id: 3,
-    firstName: 'Jane',
-    lastName: 'Smith',
-    email: 'jane@example.com',
-    password: 'Password123',
-  },
-  {
-    id: 4,
-    firstName: 'Alice',
-    lastName: 'Johnson',
-    email: 'alice@example.com',
-    password: 'Password123',
-  },
-  {
-    id: 5,
-    firstName: 'Bob',
-    lastName: 'Brown',
-    email: 'bob@example.com',
-    password: 'Password123',
-  },
-];
-
 @Injectable()
 export class UserService {
   constructor(
