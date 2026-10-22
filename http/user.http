@@ -1,0 +1,33 @@
+### getUser
+GET http://localhost:4000/users?limit=10&page=1 HTTP/1.1
+
+
+### getUserDetails
+GET http://localhost:4000/users/1?limit=20&page=1 HTTP/1.1
+Content-Type: application/json
+
+
+### postUser
+POST http://localhost:4000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Kamal Kumar",
+    "lastName": "Jeldi",
+    "email": "jeldi.kamalkumar@example.com",
+    "password": "Password123"
+}
+
+
+### putUser
+PUT http://localhost:4000/users?age=30&city=Kathmandu HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "kamal@example.com",
+    "password": "Password123"
+}
+
+### deleteUser
+DELETE http://localhost:4000/users HTTP/1.1
+Content-Type: application/json

@@ -1,0 +1,15 @@
+### get all tags
+GET http://localhost:4000/tags HTTP/1.1
+Content-Type: application/json
+
+### Create Tag
+POST http://localhost:4000/tags HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "React",
+    "slug": "react",
+    "description": "This is a react tag",
+    "schema": "{\"sideBarExpanded\": false, \"headerExpanded\": true}",
+    "featuredImageUrl": "http://localhost.com/tags/images/first-tag.jpg"
+}
